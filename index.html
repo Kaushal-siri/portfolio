@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaushal Kishore - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#3B82F6",
+              secondary: "#1E40AF",
+              accent: "#10B981",
+              dark: "#1F2937",
+              light: "#F9FAFB",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          <div class="text-xl font-bold text-primary">Kaushal Kishore</div>
+          <div class="hidden md:flex space-x-8">
+            <a href="#home" class="nav-link text-gray-700 hover:text-primary"
+              >Home</a
+            >
+            <a href="#about" class="nav-link text-gray-700 hover:text-primary"
+              >About</a
+            >
+            <a href="#skills" class="nav-link text-gray-700 hover:text-primary"
+              >Skills</a
+            >
+            <a
+              href="#projects"
+              class="nav-link text-gray-700 hover:text-primary"
+              >Projects</a
+            >
+            <a href="#contact" class="nav-link text-gray-700 hover:text-primary"
+              >Contact</a
+            >
+          </div>
+          <div class="md:hidden">
+            <button id="menu-btn" class="text-gray-700">
+              <i class="fas fa-bars text-2xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary to-secondary pt-16"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white"
+      >
+        <div class="mb-8">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ecc438c0-1e2a-4b12-9f86-c0263eafbaa8.png"
+            alt="Professional headshot of Kaushal Kishore - a confident software developer with a friendly smile, wearing business casual attire against a clean background"
+            class="w-48 h-48 rounded-full mx-auto border-4 border-white shadow-2xl mb-6"
+            onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI0U1RTVFNSIvPjx0ZXh0IHg9IjEwMCIgeT0iMTAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIGZpbGw9IiM2NjYiPktLLzwvdGV4dD48L3N2Zz4='"
+          />
+        </div>
+        <h1 class="text-5xl md:text-7xl font-bold mb-6">Kaushal Kishore</h1>
+        <p class="text-xl md:text-2xl mb-8 opacity-90">
+          Full Stack Developer & Software Engineer
+        </p>
+        <p class="text-lg mb-12 max-w-2xl mx-auto">
+          Crafting digital solutions with expertise in Java, DSA, Web
+          Development, SQL, and MongoDB. Passionate about creating efficient and
+          scalable applications.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="#projects"
+            class="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300 shadow-lg"
+          >
+            View My Work
+          </a>
+          <a
+            href="#contact"
+            class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-primary transition duration-300"
+          >
+            Get In Touch
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold text-center text-dark mb-16">About Me</h2>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/46750302-001f-45b9-b20d-be2871cfbdc2.png"
+              alt="Kaushal Kishore working on a modern laptop in a professional development environment with code visible on screen and coffee cup nearby"
+              class="rounded-lg shadow-2xl w-full"
+              onerror="this.style.backgroundColor='#E5E5E5'"
+            />
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold text-primary mb-6">
+              Passionate Developer with Strong Technical Foundation
+            </h3>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              I am a dedicated software developer with strong expertise in Java
+              programming, Data Structures & Algorithms, and full-stack web
+              development. My journey in technology began with a fascination for
+              problem-solving and has evolved into a passion for creating
+              robust, scalable applications.
+            </p>
+            <p class="text-gray-600 mb-8 leading-relaxed">
+              With experience in both SQL and NoSQL databases, I specialize in
+              building efficient backend systems while ensuring optimal
+              performance and data integrity. I believe in writing clean,
+              maintainable code and continuously learning new technologies to
+              stay ahead in the ever-evolving tech landscape.
+            </p>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="text-center p-4 bg-gray-50 rounded-lg">
+                <div class="text-2xl font-bold text-primary">5+</div>
+                <div class="text-gray-600">Projects Completed</div>
+              </div>
+              <div class="text-center p-4 bg-gray-50 rounded-lg">
+                <div class="text-2xl font-bold text-primary">3+</div>
+                <div class="text-gray-600">Years Experience</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold text-center text-dark mb-16">
+          Technical Skills
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-12 mb-16">
+          <div>
+            <h3 class="text-2xl font-semibold text-primary mb-6">
+              Programming Languages
+            </h3>
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700">Java</span>
+                  <span class="text-primary font-semibold">95%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div
+                    class="skill-bar bg-primary h-3 rounded-full"
+                    style="width: 95%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700">JavaScript</span>
+                  <span class="text-primary font-semibold">90%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div
+                    class="skill-bar bg-primary h-3 rounded-full"
+                    style="width: 90%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-semibold text-primary mb-6">Databases</h3>
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700">SQL</span>
+                  <span class="text-primary font-semibold">92%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div
+                    class="skill-bar bg-primary h-3 rounded-full"
+                    style="width: 92%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700">MongoDB</span>
+                  <span class="text-primary font-semibold">88%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div
+                    class="skill-bar bg-primary h-3 rounded-full"
+                    style="width: 88%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center p-6 bg-white rounded-lg shadow-md">
+            <div class="text-4xl text-primary mb-4">
+              <i class="fas fa-code"></i>
+            </div>
+            <h4 class="text-xl font-semibold mb-3">Web Development</h4>
+            <p class="text-gray-600">
+              HTML5, CSS3, React, Node.js, Express, REST APIs
+            </p>
+          </div>
+
+          <div class="text-center p-6 bg-white rounded-lg shadow-md">
+            <div class="text-4xl text-primary mb-4">
+              <i class="fas fa-project-diagram"></i>
+            </div>
+            <h4 class="text-xl font-semibold mb-3">
+              Data Structures & Algorithms
+            </h4>
+            <p class="text-gray-600">
+              Complex problem solving, Algorithm design, Optimization
+            </p>
+          </div>
+
+          <div class="text-center p-6 bg-white rounded-lg shadow-md">
+            <div class="text-4xl text-primary mb-4">
+              <i class="fas fa-database"></i>
+            </div>
+            <h4 class="text-xl font-semibold mb-3">Database Management</h4>
+            <p class="text-gray-600">
+              Database design, Query optimization, Data modeling
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold text-center text-dark mb-16">
+          Featured Projects
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+         
+          <div
+            class="project-card bg-white rounded-lg shadow-md overflow-hidden"
+          >
+            <div class="h-48 bg-gray-200">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/80b84f67-4a79-49f4-a5cc-19dd1adb3a96.png"
+                alt="Java application dashboard showing real-time data processing and analytics with clean UI design"
+                class="w-full h-full object-cover"
+                onerror="this.style.backgroundColor='#E5E5E5'"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-primary mb-3">
+                Java E-Commerce Platform
+              </h3>
+              <p class="text-gray-600 mb-4">
+                A full-stack e-commerce solution built with Java Spring Boot and
+                React.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="bg-primary text-white px-3 py-1 rounded-full text-sm"
+                  >Java</span
+                >
+                <span
+                  class="bg-primary text-white px-3 py-1 rounded-full text-sm"
+                  >Spring Boot</span
+                >
+                <span
+                  class="bg-primary text-white px-3 py-1 rounded-full text-sm"
+                  >React</span
+                >
+              </div>
+              <div class="flex gap-4">
+                <a href="#" class="text-primary hover:text-secondary">
+                  <i class="fab fa-github"></i> Code
+                </a>
+                <a href="#" class="text-primary hover:text-secondary">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+       
+          <div
+            class="project-card bg-white rounded-lg shadow-md overflow-hidden"
+          >
+            <div class="h-48 bg-gray-200">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a02ca34d-9e03-4715-b002-0855c0c69147.png"
+                alt="Database management system interface showing SQL queries and data visualization charts"
+                class="w-full h-full object-cover"
+                onerror="this.style.backgroundColor='#E5E5E5'"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-primary mb-3">
+                SQL Database Manager
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Advanced database management system with optimized queries and
+                reporting.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="bg-primary text-white px-3 py-1 rounded-full text-sm"
+                  >SQL</span
+                >
+                <span
+                  class="bg-primary text-white px-3 py-1 rounded-full text-sm"
+                  >Python</span
+                >
+                <span
+                  class="bg-primary text-white px-3 py-1 rounded-full text-sm"
+                  >Django</span
+                >
+              </div>
+              <div class="flex gap-4">
+                <a href="#" class="text-primary hover:text-secondary">
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+         
+          <div
+            class="project-card bg-white rounded-lg shadow-md overflow-hidden"
+          >
+            <div class="h-48 bg-gray-200">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b618a1a6-e425-41c0-9485-14f45dc87c9e.png"
+                alt="Modern web application interface with MongoDB database integration and real-time data updates"
+                class="w-full h-full object-cover"
+                onerror="this.style.backgroundColor='#E5E5E5'"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-primary mb-3">
+                MongoDB Powered Blog
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Scalable blog platform using MongoDB with real-time content
+                updates.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="bg-primary text-white px-3 py-1 rounded-full text-sm"
+                  >MongoDB</span
+                >
+                <span
+                  class="bg-primary text-white px-3 py-1 rounded-full text-sm"
+                  >Node.js</span
+                >
+                <span
+                  class="bg-primary text-white px-3 py-1 rounded-full text-sm"
+                  >Express</span
+                >
+              </div>
+              <div class="flex gap-4">
+                <a href="#" class="text-primary hover:text-secondary">
+                  <i class="fab fa-github"></i> Code
+                </a>
+                <a href="#" class="text-primary hover:text-secondary">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold text-center text-dark mb-16">
+          Get In Touch
+        </h2>
+
+        <div class="bg-white rounded-lg shadow-2xl p-8">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-2xl font-semibold text-primary mb-6">
+                Let's Work Together
+              </h3>
+              <p class="text-gray-600 mb-6">
+                I'm always interested in new opportunities and exciting
+                projects. Whether you have a question or just want to say hi,
+                I'll get back to you as soon as possible!
+              </p>
+              <div class="space-y-4">
+                <div class="flex items-center">
+                  <div
+                    class="w-10 h-10 bg-primary rounded-full flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-envelope text-white"></i>
+                  </div>
+                  <span>kaushal.kishore@email.com</span>
+                </div>
+                <div class="flex items-center">
+                  <div
+                    class="w-10 h-10 bg-primary rounded-full flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-phone text-white"></i>
+                  </div>
+                  <span>+1 (555) 123-4567</span>
+                </div>
+                <div class="flex items-center">
+                  <div
+                    class="w-10 h-10 bg-primary rounded-full flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-map-marker-alt text-white"></i>
+                  </div>
+                  <span>Software Development Hub, Tech City</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <form id="contact-form" class="space-y-4">
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary"
+                    required
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    placeholder="Your Email"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary"
+                    required
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Subject"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary"
+                    required
+                  />
+                </div>
+                <div>
+                  <textarea
+                    placeholder="Your Message"
+                    rows="5"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary"
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-secondary transition duration-300"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="flex justify-center space-x-6 mb-6">
+          <a
+            href="#"
+            class="text-gray-400 hover:text-white transition duration-300"
+          >
+            <i class="fab fa-linkedin-in text-2xl"></i>
+          </a>
+          <a
+            href="#"
+            class="text-gray-400 hover:text-white transition duration-300"
+          >
+            <i class="fab fa-github text-2xl"></i>
+          </a>
+          <a
+            href="#"
+            class="text-gray-400 hover:text-white transition duration-300"
+          >
+            <i class="fab fa-twitter text-2xl"></i>
+          </a>
+        </div>
+        <p class="text-gray-400">
+          © 2024 Kaushal Kishore. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
